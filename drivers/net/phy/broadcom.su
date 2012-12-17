@@ -1,0 +1,6 @@
+broadcom.c:57:12:bcm54xx_parse_status	16	static
+broadcom.c:99:12:bcm54xx_startup	16	static
+broadcom.c:121:12:bcm5482_config	16	static
+broadcom.c:48:12:bcm5461_config	16	static
+broadcom.c:236:12:bcm5482_startup	24	static
+broadcom.c:281:5:phy_broadcom_init	16	static

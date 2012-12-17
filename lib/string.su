@@ -1,0 +1,15 @@
+string.c:126:8:strncat	8	static
+string.c:171:5:strncmp	8	static
+string.c:191:8:strchr	8	static
+string.c:206:8:strrchr	24	static
+string.c:224:7:skip_spaces	16	static
+string.c:239:7:strim	16	static
+string.c:277:8:strnlen	8	static
+string.c:288:8:strdup	24	static
+string.c:309:8:strspn	8	static
+string.c:335:8:strpbrk	8	static
+string.c:357:8:strtok	24	static
+string.c:390:8:strsep	24	static
+string.c:414:7:strswab	8	static
+string.c:591:8:memscan	8	static
+string.c:611:8:strstr	32	static

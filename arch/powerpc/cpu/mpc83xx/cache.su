@@ -1,0 +1,2 @@
+cache.c:27:6:invalidate_dcache_range	8	static
+cache.c:31:6:flush_dcache_range	8	static

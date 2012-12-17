@@ -1,0 +1,4 @@
+cmd_bdinfo.c:34:13:print_num	16	static
+cmd_bdinfo.c:60:13:print_mhz	48	static
+cmd_bdinfo.c:40:13:print_eth	32	static
+cmd_bdinfo.c:69:5:do_bdinfo	16	static

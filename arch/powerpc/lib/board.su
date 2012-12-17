@@ -1,0 +1,11 @@
+board.c:218:12:init_func_i2c	16	static
+board.c:158:12:init_baudrate	16	static
+board.c:166:6:__board_add_ram_info	8	static
+board.c:194:12:init_func_ram	16	static
+board.c:174:5:__board_flash_wp_on	8	static
+board.c:187:6:__cpu_secondary_init_r	8	static
+board.c:303:7:get_effective_memsize	8	static
+board.c:314:5:__fixup_cpu	8	static
+board.c:919:6:hang	16	static
+board.c:487:6:board_init_r	24	static
+board.c:341:6:board_init_f	32	static

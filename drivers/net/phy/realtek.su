@@ -1,0 +1,3 @@
+realtek.c:106:12:rtl8211b_startup	32	static
+realtek.c:40:12:rtl8211b_config	16	static
+realtek.c:125:5:phy_realtek_init	16	static

@@ -1,0 +1,2 @@
+ehci-fsl.c:40:5:ehci_hcd_init	32	static
+ehci-fsl.c:111:5:ehci_hcd_stop	8	static

@@ -1,0 +1,3 @@
+display_options.c:30:5:display_options	16	static
+display_options.c:45:6:print_size	24	static
+display_options.c:101:5:print_buffer	168	static

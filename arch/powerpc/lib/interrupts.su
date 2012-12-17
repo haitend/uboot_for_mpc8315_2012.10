@@ -1,0 +1,5 @@
+interrupts.c:83:6:enable_interrupts	8	static
+interrupts.c:89:5:disable_interrupts	8	static
+interrupts.c:97:5:interrupt_init	16	static
+interrupts.c:116:6:timer_interrupt	16	static
+interrupts.c:140:7:get_timer	16	static

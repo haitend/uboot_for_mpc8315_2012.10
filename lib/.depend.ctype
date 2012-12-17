@@ -1,0 +1,2 @@
+ctype.o: ctype.c \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/ctype.h

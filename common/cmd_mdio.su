@@ -1,0 +1,6 @@
+cmd_mdio.c:43:12:extract_range	40	static
+cmd_mdio.c:60:5:mdio_write_ranges	56	static
+cmd_mdio.c:82:5:mdio_read_ranges	72	static
+cmd_mdio.c:115:5:extract_reg_range	72	static
+cmd_mdio.c:144:5:extract_phy_range	32	static
+cmd_mdio.c:187:12:do_mdio	72	static

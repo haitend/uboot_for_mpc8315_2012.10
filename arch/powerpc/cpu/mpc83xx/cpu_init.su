@@ -1,0 +1,3 @@
+cpu_init.c:64:6:cpu_init_f	16	static
+cpu_init.c:187:5:cpu_init_r	8	static
+cpu_init.c:319:5:prt_83xx_rsr	32	static

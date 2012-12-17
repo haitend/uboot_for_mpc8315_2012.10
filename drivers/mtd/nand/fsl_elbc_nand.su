@@ -1,0 +1,13 @@
+fsl_elbc_nand.c:168:13:set_addr	8	static
+fsl_elbc_nand.c:259:13:fsl_elbc_do_read	8	static
+fsl_elbc_nand.c:492:13:fsl_elbc_select_chip	8	static
+fsl_elbc_nand.c:579:12:fsl_elbc_verify_buf	16	static
+fsl_elbc_nand.c:539:11:fsl_elbc_read_byte	16	static
+fsl_elbc_nand.c:208:12:fsl_elbc_run_command	32	static
+fsl_elbc_nand.c:612:12:fsl_elbc_wait	24	static
+fsl_elbc_nand.c:291:13:fsl_elbc_cmdfunc	32	static
+fsl_elbc_nand.c:556:13:fsl_elbc_read_buf	24	static
+fsl_elbc_nand.c:643:12:fsl_elbc_read_page	24	static
+fsl_elbc_nand.c:502:13:fsl_elbc_write_buf	32	static
+fsl_elbc_nand.c:659:13:fsl_elbc_write_page	24	static
+fsl_elbc_nand.c:825:6:board_nand_init	16	static

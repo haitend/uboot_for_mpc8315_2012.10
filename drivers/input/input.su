@@ -1,0 +1,8 @@
+input.c:207:12:array_search	8	static
+input.c:97:5:input_queue_ascii	8	static
+input.c:114:5:input_tstc	16	static
+input.c:123:5:input_getc	16	static
+input.c:341:5:input_send_keycodes	88	dynamic
+input.c:376:5:input_add_table	8	static
+input.c:395:5:input_init	32	static
+input.c:415:5:input_stdio_register	16	static

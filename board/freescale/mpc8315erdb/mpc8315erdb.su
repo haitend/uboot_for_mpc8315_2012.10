@@ -1,0 +1,6 @@
+mpc8315erdb.c:40:5:board_early_init_f	8	static
+mpc8315erdb.c:63:5:checkboard	32	static
+mpc8315erdb.c:134:6:pci_init_board	32	static
+mpc8315erdb.c:178:6:fdt_tsec1_fixup	32	static
+mpc8315erdb.c:207:6:ft_board_setup	24	static
+mpc8315erdb.c:218:5:board_eth_init	16	static

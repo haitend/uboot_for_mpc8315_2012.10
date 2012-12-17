@@ -1,0 +1,3 @@
+natsemi.c:72:12:dp83865_startup	16	static
+natsemi.c:34:12:dp83865_config	16	static
+natsemi.c:91:5:phy_natsemi_init	16	static

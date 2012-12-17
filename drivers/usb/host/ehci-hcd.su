@@ -1,0 +1,10 @@
+ehci-hcd.c:175:12:ehci_td_buffer	24	static
+ehci-hcd.c:123:12:handshake	32	static
+ehci-hcd.c:208:1:ehci_submit_async	240	static
+ehci-hcd.c:115:6:__ehci_powerup_fixup	8	static
+ehci-hcd.c:578:1:ehci_submit_root	56	static
+ehci-hcd.c:832:5:usb_lowlevel_stop	8	static
+ehci-hcd.c:837:5:usb_lowlevel_init	16	static
+ehci-hcd.c:903:1:submit_bulk_msg	8	static
+ehci-hcd.c:915:1:submit_control_msg	16	static
+ehci-hcd.c:933:1:submit_int_msg	32	static

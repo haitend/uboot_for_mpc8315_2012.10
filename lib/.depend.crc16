@@ -1,0 +1,8 @@
+crc16.o: crc16.c \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/crc.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/config.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/stddef.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/types.h

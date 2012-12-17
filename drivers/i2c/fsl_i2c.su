@@ -1,0 +1,11 @@
+fsl_i2c.c:137:21:set_i2c_bus_speed	48	static
+fsl_i2c.c:268:1:i2c_wait4bus	40	static
+fsl_i2c.c:217:14:get_i2c_clock	8	static
+fsl_i2c.c:226:1:i2c_init	48	static
+fsl_i2c.c:381:1:i2c_read	80	static
+fsl_i2c.c:407:1:i2c_write	72	static
+fsl_i2c.c:429:1:i2c_probe	16	static
+fsl_i2c.c:441:5:i2c_set_bus_num	16	static
+fsl_i2c.c:469:5:i2c_set_bus_speed	24	static
+fsl_i2c.c:481:14:i2c_get_bus_num	16	static
+fsl_i2c.c:490:14:i2c_get_bus_speed	16	static

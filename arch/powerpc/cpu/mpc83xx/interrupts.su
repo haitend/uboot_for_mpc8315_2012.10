@@ -1,0 +1,5 @@
+interrupts.c:39:5:interrupt_init_cpu	8	static
+interrupts.c:57:6:external_interrupt	8	static
+interrupts.c:67:1:irq_install_handler	8	static
+interrupts.c:72:6:irq_free_handler	8	static
+interrupts.c:77:6:timer_interrupt_cpu	8	static

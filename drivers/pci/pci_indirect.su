@@ -1,0 +1,7 @@
+pci_indirect.c:101:1:indirect_read_config_byte	8	static
+pci_indirect.c:102:1:indirect_read_config_word	8	static
+pci_indirect.c:103:1:indirect_read_config_dword	8	static
+pci_indirect.c:109:1:indirect_write_config_byte	8	static
+pci_indirect.c:110:1:indirect_write_config_word	8	static
+pci_indirect.c:111:1:indirect_write_config_dword	8	static
+pci_indirect.c:114:6:pci_setup_indirect	16	static

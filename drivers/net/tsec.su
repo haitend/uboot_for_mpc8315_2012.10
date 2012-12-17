@@ -1,0 +1,6 @@
+tsec.c:379:12:tsec_send	16	static
+tsec.c:416:12:tsec_recv	48	static
+tsec.c:453:13:tsec_halt	8	static
+tsec.c:476:12:tsec_init	56	static
+tsec.c:669:5:tsec_eth_init	80	static
+tsec.c:683:5:tsec_standard_init	32	static

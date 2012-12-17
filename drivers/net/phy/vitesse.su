@@ -1,0 +1,5 @@
+vitesse.c:103:12:cis8204_config	16	static
+vitesse.c:53:12:vitesse_config	16	static
+vitesse.c:126:5:vsc8601_config	8	static
+vitesse.c:95:12:vitesse_startup	16	static
+vitesse.c:239:5:phy_vitesse_init	16	static

@@ -1,0 +1,4 @@
+time.c:33:15:usec2ticks	16	static
+time.c:53:6:__udelay	8	static
+time.c:61:15:ticks2usec	16	static
+time.c:79:5:init_timebase	8	static

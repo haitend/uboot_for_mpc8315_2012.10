@@ -1,0 +1,6 @@
+fsl_mdio.c:71:12:fsl_pq_mdio_reset	8	static
+fsl_mdio.c:29:6:tsec_local_mdio_write	8	static
+fsl_mdio.c:93:5:tsec_phy_write	8	static
+fsl_mdio.c:42:5:tsec_local_mdio_read	8	static
+fsl_mdio.c:86:5:tsec_phy_read	8	static
+fsl_mdio.c:103:5:fsl_pq_mdio_init	24	static

@@ -1,0 +1,5 @@
+ds1337.c:206:13:rtc_write	24	static
+ds1337.c:200:7:rtc_read	24	static
+ds1337.c:88:5:rtc_get	48	static
+ds1337.c:141:5:rtc_set	24	static
+ds1337.c:179:6:rtc_reset	8	static

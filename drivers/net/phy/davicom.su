@@ -1,0 +1,3 @@
+davicom.c:75:12:dm9161_startup	16	static
+davicom.c:41:12:dm9161_config	16	static
+davicom.c:93:5:phy_davicom_init	16	static

@@ -1,0 +1,6 @@
+bootm.c:189:12:boot_cmdline_linux	16	static
+bootm.c:210:12:boot_bd_t_linux	24	static
+bootm.c:59:13:boot_jump_linux	24	static
+bootm.c:129:6:arch_lmb_reserve	32	static
+bootm.c:243:12:__ft_verify_fdt	8	static
+bootm.c:330:5:do_bootm_linux	40	static

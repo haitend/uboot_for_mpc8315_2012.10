@@ -1,0 +1,4 @@
+bootp.c:122:12:truncate_sz	16	static
+bootp.c:288:1:BootpHandler	96	static
+bootp.c:601:1:BootpRequest	56	static
+bootp.c:328:1:BootpTimeout	16	static

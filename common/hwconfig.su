@@ -1,0 +1,8 @@
+hwconfig.c:32:20:hwconfig_parse	56	static
+hwconfig.c:75:20:__hwconfig	24	static
+hwconfig.c:126:5:hwconfig_f	8	static
+hwconfig.c:144:13:hwconfig_arg_f	8	static
+hwconfig.c:163:5:hwconfig_arg_cmp_f	40	static
+hwconfig.c:187:5:hwconfig_sub_f	32	static
+hwconfig.c:208:13:hwconfig_subarg_f	40	static
+hwconfig.c:230:5:hwconfig_subarg_cmp_f	40	static

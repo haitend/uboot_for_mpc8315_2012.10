@@ -1,0 +1,13 @@
+natsemi.o: natsemi.c \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/phy.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/list.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/stddef.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/config.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/poison.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/mii.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/ethtool.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/mdio.h

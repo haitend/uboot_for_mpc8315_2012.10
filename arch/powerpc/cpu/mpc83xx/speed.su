@@ -1,0 +1,4 @@
+speed.c:519:5:do_clocks	48	static
+speed.c:91:5:get_clocks	32	static
+speed.c:505:7:get_bus_freq	8	static
+speed.c:514:7:get_ddr_freq	8	static

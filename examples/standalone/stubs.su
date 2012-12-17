@@ -1,0 +1,2 @@
+stubs.c:215:30:dummy	16	static
+stubs.c:222:6:app_startup	16	static

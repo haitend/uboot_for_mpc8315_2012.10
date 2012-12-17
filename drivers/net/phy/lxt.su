@@ -1,0 +1,2 @@
+lxt.c:64:12:lxt971_startup	16	static
+lxt.c:82:5:phy_lxt_init	16	static

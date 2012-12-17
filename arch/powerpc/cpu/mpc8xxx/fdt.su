@@ -1,0 +1,4 @@
+fdt.c:91:12:fdt_fixup_usb_mode_phy_type	32	static
+fdt.c:136:6:fdt_fixup_dr_usb	104	static
+fdt.c:200:6:fdt_fixup_crypto_node	256	static
+fdt.c:289:5:fdt_fixup_phy_connection	24	static

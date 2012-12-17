@@ -1,0 +1,5 @@
+cpu.c:45:5:checkcpu	408	static
+cpu.c:130:1:do_reset	16	static
+cpu.c:189:15:get_tbclk	8	static
+cpu.c:218:5:cpu_eth_init	8	static
+cpu.c:234:5:cpu_mmc_init	8	static

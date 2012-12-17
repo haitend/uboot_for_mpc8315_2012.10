@@ -1,0 +1,12 @@
+_ashldi3.o: _ashldi3.S \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/ppc_asm.tmpl \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/ppc_defs.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_cmd_defaults.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_defaults.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/configs/MPC8315ERDB.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_cmd_default.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/config.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_phylib_all_drivers.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_fallbacks.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/config_uncmd_spl.h

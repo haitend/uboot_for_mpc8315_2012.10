@@ -1,0 +1,12 @@
+eepro100.c:391:12:wait_for_eepro100	8	static
+eepro100.c:763:12:read_eeprom	48	static
+eepro100.c:884:13:init_rx_ring	40	static
+eepro100.c:668:12:eepro100_recv	48	static
+eepro100.c:733:13:eepro100_halt	16	static
+eepro100.c:278:12:get_phyreg	24	static
+eepro100.c:323:27:verify_phyaddr	40	static
+eepro100.c:370:12:eepro100_miiphy_write	32	static
+eepro100.c:353:12:eepro100_miiphy_read	32	static
+eepro100.c:610:12:eepro100_send	48	static
+eepro100.c:489:12:eepro100_init	32	static
+eepro100.c:411:5:eepro100_initialize	96	static

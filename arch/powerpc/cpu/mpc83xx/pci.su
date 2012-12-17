@@ -1,0 +1,2 @@
+pci.c:136:6:mpc83xx_pci_init	88	static
+pci.c:202:6:ft_pci_setup	40	static

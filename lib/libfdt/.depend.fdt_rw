@@ -1,0 +1,19 @@
+fdt_rw.o: fdt_rw.c \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/libfdt_env.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/compiler.h \
+ /home/kb310/PPC/tool-chain/lib/gcc/powerpc-e300c3-linux-gnu/4.7.0/include/stddef.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/string.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/config.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/stddef.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/posix_types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/types.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/string.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/asm/byteorder.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/byteorder/big_endian.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/byteorder/swab.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/linux/byteorder/generic.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/fdt.h \
+ /home/kb310/PPC/ltib-mpc8315erdb-20100719/rpm/BUILD/test/u-boot-2012.10/include/libfdt.h \
+ libfdt_internal.h

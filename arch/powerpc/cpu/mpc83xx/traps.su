@@ -1,0 +1,11 @@
+traps.c:46:1:print_backtrace	32	static
+traps.c:66:6:show_regs	32	static
+traps.c:93:1:_exception	24	static
+traps.c:101:6:dump_pci	8	static
+traps.c:118:1:MachineCheckException	16	static
+traps.c:178:1:AlignmentException	16	static
+traps.c:190:1:ProgramCheckException	16	static
+traps.c:202:1:SoftEmuException	16	static
+traps.c:215:1:UnknownException	16	static
+traps.c:231:1:DebugException	16	static
+traps.c:244:1:addr_probe	8	static
