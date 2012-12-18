@@ -203,7 +203,7 @@ Discarded input sections
  .text.usb_get_class_descriptor
                 0x0000000000000000       0x70 common/libcommon.o
  .rodata.version_string
-                0x0000000000000000       0x28 common/libcommon.o
+                0x0000000000000000       0x37 common/libcommon.o
  .rodata.__FUNCTION__.5158
                 0x0000000000000000       0x17 common/libcommon.o
  .data          0x0000000000000000        0x0 common/libcommon.o
@@ -476,11 +476,11 @@ Linker script and memory map
  arch/powerpc/cpu/mpc83xx/start.o(.text*)
  .text          0x00000000fe000000     0x3814 arch/powerpc/cpu/mpc83xx/start.o
                 0x00000000fe000044                version_string
-                0x00000000fe000074                enable_addr_trans
-                0x00000000fe000088                disable_addr_trans
-                0x00000000fe0000a8                get_pvr
-                0x00000000fe0000b0                ppcDWstore
-                0x00000000fe0000bc                ppcDWload
+                0x00000000fe000084                enable_addr_trans
+                0x00000000fe000098                disable_addr_trans
+                0x00000000fe0000b8                get_pvr
+                0x00000000fe0000c0                ppcDWstore
+                0x00000000fe0000cc                ppcDWload
                 0x00000000fe000100                _start
                 0x00000000fe0001a8                _start_of_vectors
                 0x00000000fe002fa4                _end_of_vectors

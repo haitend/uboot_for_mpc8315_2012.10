@@ -1,11 +1,11 @@
 00000442 A __fixup_entries
 00000857 A __got2_entries
 fe000044 T version_string
-fe000074 T enable_addr_trans
-fe000088 T disable_addr_trans
-fe0000a8 T get_pvr
-fe0000b0 T ppcDWstore
-fe0000bc T ppcDWload
+fe000084 T enable_addr_trans
+fe000098 T disable_addr_trans
+fe0000b8 T get_pvr
+fe0000c0 T ppcDWstore
+fe0000cc T ppcDWload
 fe000100 T _start
 fe000154 t in_flash
 fe0001a8 T _start_of_vectors
