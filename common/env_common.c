@@ -83,12 +83,14 @@ const uchar default_environment[] = {
 #ifdef	CONFIG_ETHPRIME
 	"ethprime="	CONFIG_ETHPRIME			"\0"
 #endif
-#ifdef	CONFIG_IPADDR
-	"ipaddr="	MK_STR(CONFIG_IPADDR)		"\0"
-#endif
-#ifdef	CONFIG_SERVERIP
-	"serverip="	MK_STR(CONFIG_SERVERIP)		"\0"
-#endif
+//#ifdef	CONFIG_IPADDR
+	//"ipaddr="	MK_STR(CONFIG_IPADDR)		"\0"
+	"ipaddr="	"192.168.10.254"		"\0"
+//#endif
+//#ifdef	CONFIG_SERVERIP
+	//"serverip="	MK_STR(CONFIG_SERVERIP)		"\0"
+	"serverip="	"192.168.10.101"		"\0"
+//#endif
 #ifdef	CONFIG_SYS_AUTOLOAD
 	"autoload="	CONFIG_SYS_AUTOLOAD		"\0"
 #endif
@@ -130,6 +132,7 @@ const uchar default_environment[] = {
 	"soc="		CONFIG_SYS_SOC			"\0"
 #endif
 #endif
+	"download_key"	"on"				"\0"
 #ifdef	CONFIG_EXTRA_ENV_SETTINGS
 	CONFIG_EXTRA_ENV_SETTINGS
 #endif

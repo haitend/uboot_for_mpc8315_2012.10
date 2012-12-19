@@ -1,0 +1,118 @@
+#################################################
+# 这是针对 VANET 的硬件平台的bootloader 修改记录#
+# 平台 ： MPC8315
+# u-boot 版本 ：u-boot.2012.10
+# author : haitend
+# email : haixiong513@163.com
+# time : 2012.12.18
+################################################
+1.文件:arch/powerpc/cpu/mpc83xx/cpu_init.c
+  函数:cpu_init_f()
+  修改内容:注释掉函数末尾的如下代码
+  #if defined(CONFIG_USB_EHCI_FSL) && defined(CONFIG_MPC831x)
+        uint32_t temp;
+        struct usb_ehci *ehci = (struct usb_ehci *)CONFIG_SYS_FSL_USB_ADDR;
+        setbits_be32(&ehci->control, REFSEL_16MHZ | UTMI_PHY_EN);
+	do {
+                temp = __raw_readl(&ehci->control);
+                udelay(1000);
+        } while (!(temp & PHY_CLK_VALID));
+  #endif
+2.文件：include/configs/MPC8315ERDB.h
+  1.#define CONFIG_SYS_DDR_SIZE 128
+    修改为： #define CONFIG_SYS_DDR_SIZE 512
+    这是修改DDR的大小，128M修改为512M
+  2.#define CONFIG_SYS_FLASH_SIZE           8
+    修改为:  #define CONFIG_SYS_FLASH_SIZE 16
+    修改NOR FLASH 的大小，8M 修改为16M
+  3.#define CONFIG_SYS_LBLAWAR0_PRELIM     (LBLAWAR_EN | LBLAWAR_8MB)
+    修改为：#define CONFIG_SYS_LBLAWAR0_PRELIM  (LBLAWAR | LBLAWAR_16MB) 
+    修改窗口大小
+  4./* 127 64KB sectors and 8 8KB top sectors per device */
+    #define CONFIG_SYS_MAX_FLASH_SECT       135
+    修改为: #define CONFIG_SYS_MAX_FLASH_SECT       128
+    修改NOR FLASH 的section 数量，这是根据不同的芯片决定的
+    这是s29gl128p
+  5.#define CONFIG_SYS_NAND_BLOCK_SIZE        16384
+    修改为：#define CONFIG_SYS_NAND_BLOCK_SIZE      131072
+    修改NAND 的block size，这也是由NAND 芯片决定的
+    这是K9F1G08U
+  6.#define CONFIG_SYS_NAND_OR_PRELIM       \
+                                (P2SZ_TO_AM(CONFIG_SYS_NAND_WINDOW_SIZE) \
+                                | OR_FCM_CSCT \
+                                | OR_FCM_CST \
+                                | OR_FCM_CHT \
+                                | OR_FCM_SCY_1 \
+                                | OR_FCM_TRLX \
+                                | OR_FCM_EHTR)
+    修改为: #define CONFIG_SYS_NAND_OR_PRELIM       \
+                                (P2SZ_TO_AM(CONFIG_SYS_NAND_WINDOW_SIZE) \
+                                | OR_FCM_PGS \  /* big-page */
+                                | OR_FCM_CSCT \
+                                | OR_FCM_CST \
+                                | OR_FCM_CHT \
+                                | OR_FCM_SCY_1 \
+                                | OR_FCM_TRLX \
+                                | OR_FCM_EHTR)
+    添加对big-page的支持。
+   7.对于PHY
+     #define TSEC2_PHY_ADDR          0
+     修改为：#define TSEC2_PHY_ADDR          1
+     添加对mac地址支持
+     还要添加MAC地址的定义，它默认是没有定义的
+     #define CONFIG_ETH1ADDR         04:00:00:00:00:0B
+     因为这个版本只用了一个以太网口TSEC2.
+     所以可以把TSEC1相关的注释掉。
+   8.地址映射
+     DDR
+     #define CONFIG_SYS_IBAT0U       (CONFIG_SYS_SDRAM_BASE \
+                                | BATU_BL_128M \
+                                | BATU_VS \
+                                | BATU_VP)
+     修改为： #define CONFIG_SYS_IBAT0U       (CONFIG_SYS_SDRAM_BASE \
+                                | BATU_BL_256M \  /* 128M--256M */
+                                | BATU_VS \
+                                | BATU_VP)
+     添加：
+     #define CONFIG_SYS_IBAT6L       (0x10000000 | BATL_PP_RW | BATL_MEMCOHERENCE)
+     #define CONFIG_SYS_IBAT6U       (0x10000000 | BATU_BL_256M | BATU_VS |BATU_VP)
+     #define CONFIG_SYS_DBAT6L       CONFIG_SYS_IBAT6L
+     #define CONFIG_SYS_DBAT6U       CONFIG_SYS_IBAT6U
+     NOR
+     #define CONFIG_SYS_IBAT1U       (CONFIG_SYS_IMMR \
+                                | BATU_BL_8M \
+                                | BATU_VS \
+                                | BATU_VP)
+     修改为： #define CONFIG_SYS_IBAT1U       (CONFIG_SYS_IMMR \
+                                | BATU_BL_16M \
+                                | BATU_VS \
+                                | BATU_VP)
+     NAND
+     #define CONFIG_SYS_IBAT2U       (CONFIG_SYS_FLASH_BASE \
+                                | BATU_BL_32M \
+                                | BATU_VS \
+                                | BATU_VP)
+     修改为：#define CONFIG_SYS_IBAT2U       (CONFIG_SYS_FLASH_BASE \
+                                | BATU_BL_128M \
+                                | BATU_VS \
+                                | BATU_VP)
+    9.#define CONFIG_BOOTDELAY 6
+     修改为： #define CONFIG_BOOTDELAY 2   
+     设置自动启动内核等待时间为2s  
+
+3.文件：common/env_common.c
+    1. "ipaddr="     MK_STR(CONFIG_IPADDR)           "\0"
+     修改为："ipaddr="       "192.168.10.254"                "\0"
+     设置环境变量ipaddr == 192.168.10.254 根据需求修改在本地服务器子网中 
+     这样就不用在uboot中设置ip地址了
+    2."serverip="   MK_STR(CONFIG_SERVERIP)         "\0"
+     修改为："serverip="     "192.168.10.101"                "\0"
+     这里设置服务器ip，方便tftp下载内核等文件。
+    3.添加是否自动下载内核文件系统的标志环境变量
+      "download_key"  "on"                            "\0"
+      第一次默认是需要自动下载，如果后面需要重新下载，可以把他设置为on重启
+    
+
+
+
+

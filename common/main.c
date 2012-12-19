@@ -351,7 +351,25 @@ void main_loop (void)
 #if defined(CONFIG_UPDATE_TFTP)
 	update_tftp (0UL);
 #endif /* CONFIG_UPDATE_TFTP */
-	run_command("protect off all",0);
+	s = getenv("download_key");
+	if( strcmp(s,"on") == 0)
+	{
+		run_command("protect off all",0);
+		/*download kernel and fs,then close this key*/
+		printf("download the kernel now\n");
+		
+		printf("download the fs now\n");
+		
+		printf("download the dtb\n");
+		
+		printf("set download_key\n");
+		
+		printf("resetting ...\n");
+		
+	}
+	else
+		printf("now boot ...\n");
+
 #if defined(CONFIG_BOOTDELAY) && (CONFIG_BOOTDELAY >= 0)
 	s = getenv ("bootdelay");
 	bootdelay = s ? (int)simple_strtol(s, NULL, 10) : CONFIG_BOOTDELAY;

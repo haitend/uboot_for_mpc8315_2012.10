@@ -501,12 +501,12 @@
  * Command line configuration.
  */
 #include <config_cmd_default.h>
-
 #define CONFIG_CMD_PING
 #define CONFIG_CMD_I2C
 #define CONFIG_CMD_MII
 #define CONFIG_CMD_DATE
 #define CONFIG_CMD_PCI
+#define CONFIG_CMD_HELLO
 
 #if defined(CONFIG_SYS_RAMBOOT) && !defined(CONFIG_NAND_U_BOOT)
     #undef CONFIG_CMD_SAVEENV
@@ -583,7 +583,7 @@
 				| BATL_CACHEINHIBIT \
 				| BATL_GUARDEDSTORAGE)
 #define CONFIG_SYS_IBAT1U	(CONFIG_SYS_IMMR \
-				| BATU_BL_8M \
+				| BATU_BL_16M \
 				| BATU_VS \
 				| BATU_VP)
 #define CONFIG_SYS_DBAT1L	CONFIG_SYS_IBAT1L
@@ -677,7 +677,7 @@
 
 #define CONFIG_LOADADDR 800000	/* default location for tftp and bootm */
 
-#define CONFIG_BOOTDELAY 6	/* -1 disables auto-boot */
+#define CONFIG_BOOTDELAY 	2	/* -1 disables auto-boot */
 #undef CONFIG_BOOTARGS		/* the boot command will set bootargs */
 
 #define CONFIG_EXTRA_ENV_SETTINGS					\
